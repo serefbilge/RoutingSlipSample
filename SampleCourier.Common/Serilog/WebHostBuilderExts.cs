@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.AspNetCore.Hosting;
 using Serilog;
 
-namespace Dmo.Serilog
+namespace SampleCourier.Common.Serilog
 {
 	public static class WebHostBuilderExts
 	{

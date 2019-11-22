@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SampleCourier.Activities\SampleCourier.Activities.csproj" />
     <ProjectReference Include="..\SampleCourier.Common\SampleCourier.Common.csproj" />
+    <ProjectReference Include="..\SampleCourier.Contracts\SampleCourier.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

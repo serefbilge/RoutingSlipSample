@@ -130,3 +130,55 @@ System.Exception: There is a fault in PostProcess Activity!
 11/22/19 11:36:34.752 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-ed56-08d76f270db0.png"
 11/22/19 11:36:34.760 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Completed, length = 12373
 11/22/19 11:36:40.206 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 14:11:17.465 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 11] Validated Request 98570000-7590-54ee-b3b9-08d76f3cb1bc for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:17.854 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 12] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:17.899 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:18.411 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-6ab7-08d76f3cb2c3.png"
+11/22/19 14:11:18.425 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Completed, length = 5056
+11/22/19 14:11:18.454 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-e7da-08d76f3cb2c5 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:18.465 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 12] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:18.471 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:18.539 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 6] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:11:18.680 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 27] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-d0c6-08d76f3cb2ec.png"
+11/22/19 14:11:18.691 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Completed, length = 5056
+11/22/19 14:11:18.709 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 12] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:12:40.209 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 31] Validated Request 98570000-7590-54ee-28af-08d76f3ce382 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:12:40.217 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 16] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:12:40.232 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 10] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:12:40.561 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 27] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-e1c4-08d76f3ce3ba.png"
+11/22/19 14:12:40.562 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Completed, length = 5056
+11/22/19 14:12:40.582 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 16] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 14:14:59.139 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 6] Validated Request 98570000-7590-54ee-2092-08d76f3d35d8 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 14:14:59.544 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 14:14:59.592 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 14:15:00.033 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-7d0d-08d76f3d36dc.png"
+11/22/19 14:15:00.041 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 12373
+11/22/19 14:15:00.133 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 14:15:00.171 [ERR] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\Saga-MassTransit\RoutingslipSample\SampleCourier.Activities\PostProcess\PostProcessActivity.cs:line 24
+11/22/19 14:15:02.869 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\Saga-MassTransit\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-7d0d-08d76f3d36dc.png"
+11/22/19 14:15:08.847 [ERR] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/22/19 15:40:42.625 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 12] Validated Request 98570000-7590-54ee-d8dd-08d76f492f9f for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:40:47.407 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 12] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:40:53.316 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:40:53.794 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-088f-08d76f4936be.png"
+11/22/19 15:40:53.809 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 12373
+11/22/19 15:40:58.185 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:40:58.218 [ERR] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\Saga-MassTransit\RoutingslipSample\SampleCourier.Activities\PostProcess\PostProcessActivity.cs:line 24
+11/22/19 15:41:01.362 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-088f-08d76f4936be.png"
+11/22/19 15:41:05.348 [ERR] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 8] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/22/19 15:47:10.818 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 13] Validated Request 98570000-7590-54ee-f566-08d76f4a16fa for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:47:19.839 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 8] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:47:26.002 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 8] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 15:47:26.518 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-d6ee-08d76f4a20d2.png"
+11/22/19 15:47:26.534 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 12373
+11/22/19 15:47:29.552 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 6] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 17:18:54.792 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 6] Validated Request 98570000-7590-54ee-2ae6-08d76f56e79f for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 17:19:09.062 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 8] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 17:19:09.113 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 17:19:09.599 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-744f-08d76f56f0ea.png"
+11/22/19 17:19:09.613 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Completed, length = 12373
+11/22/19 17:19:09.694 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75

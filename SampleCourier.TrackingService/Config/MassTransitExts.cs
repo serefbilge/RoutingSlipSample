@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
-using Dmo.MassTransit;
+using SampleCourier.Common.MassTransit;
 using GreenPipes;
 using MassTransit;
 using MassTransit.EntityFrameworkCoreIntegration.Saga;
@@ -17,9 +17,9 @@ using SampleCourier.TrackingService.Service;
 
 namespace SampleCourier.TrackingService.Config
 {
-	class ValidateActivityMatrics : RoutingSlipMetrics
+	class ValidateActivityMetrics : RoutingSlipMetrics
 	{
-		public ValidateActivityMatrics(ILogger<ValidateActivityMatrics> logger) : base("Validate Activity",logger) { }
+		public ValidateActivityMetrics(ILogger<ValidateActivityMetrics> logger) : base("Validate Activity",logger) { }
 	}
 
 	public static class MassTransitExts
@@ -61,7 +61,7 @@ namespace SampleCourier.TrackingService.Config
 				return new RoutingSlipMetrics("Routing Slip",fact.CreateLogger<RoutingSlipMetrics>());
 			});
 
-			services.AddSingleton<ValidateActivityMatrics>();
+			services.AddSingleton<ValidateActivityMetrics>();
 
 			services.AddScoped<RoutingSlipMetricsConsumer>(svcProv =>
 			{
@@ -71,7 +71,7 @@ namespace SampleCourier.TrackingService.Config
 
 			services.AddScoped(svcProv =>
 			{
-				var metrics = svcProv.GetService<ValidateActivityMatrics>();
+				var metrics = svcProv.GetService<ValidateActivityMetrics>();
 				var epOpts = svcProv.GetService<IOptions<MqEndpointOptions>>().Value;
 				return new RoutingSlipActivityConsumer(metrics,epOpts.ActivityMetrics.ActivityName);
 			});

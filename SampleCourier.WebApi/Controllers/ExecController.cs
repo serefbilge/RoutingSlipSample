@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SampleCourier.Models;
 using SampleCourier.WebApi.Requests;
-using Dmo.Threading;
+using SampleCourier.Common;
 using Microsoft.EntityFrameworkCore;
 
 namespace SampleCourier.WebApi.Controllers

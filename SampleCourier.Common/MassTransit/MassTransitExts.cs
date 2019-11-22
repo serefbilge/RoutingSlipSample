@@ -7,7 +7,7 @@ using System.Text;
 using MassTransit;
 using MassTransit.RabbitMqTransport;
 
-namespace Dmo.MassTransit
+namespace SampleCourier.Common.MassTransit
 {
 	public static class MassTransitExts
 	{

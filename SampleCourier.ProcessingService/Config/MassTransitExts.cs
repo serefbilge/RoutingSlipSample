@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Dmo.MassTransit;
+using SampleCourier.Common.MassTransit;
 using GreenPipes;
 using MassTransit;
 using MassTransit.Courier.Factories;
@@ -10,10 +10,10 @@ using MassTransit.ExtensionsDependencyInjectionIntegration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using SampleCourier.Activities.PostProcess;
-using SampleCourier.Activities.PreProcess;
-using SampleCourier.Activities.Retrieve;
-using SampleCourier.Activities.Validate;
+using SampleCourier.ProcessingService.Activities.PostProcess;
+using SampleCourier.ProcessingService.Activities.PreProcess;
+using SampleCourier.ProcessingService.Activities.Retrieve;
+using SampleCourier.ProcessingService.Activities.Validate;
 
 namespace SampleCourier.ProcessingService.Config
 {

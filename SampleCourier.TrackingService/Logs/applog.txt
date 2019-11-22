@@ -26,3 +26,17 @@
 11/22/19 11:31:44.272 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Faulted: 98570000-7590-54ee-91c7-08d76f26396d, CurrentState = Executing
 11/22/19 11:36:17.766 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Created: 98570000-7590-54ee-058b-08d76f270a2c, CurrentState = Initial
 11/22/19 11:36:40.270 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Completed: 98570000-7590-54ee-058b-08d76f270a2c, CurrentState = Executing
+11/22/19 14:11:17.569 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-67ca-08d76f3cb1bc, CurrentState = Initial
+11/22/19 14:11:18.446 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-e759-08d76f3cb2c5, CurrentState = Initial
+11/22/19 14:11:18.578 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-67ca-08d76f3cb1bc, CurrentState = Executing
+11/22/19 14:11:18.717 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 8] Slip Completed: 98570000-7590-54ee-e759-08d76f3cb2c5, CurrentState = Executing
+11/22/19 14:12:40.200 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Created: 98570000-7590-54ee-283a-08d76f3ce382, CurrentState = Initial
+11/22/19 14:12:40.590 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Completed: 98570000-7590-54ee-283a-08d76f3ce382, CurrentState = Executing
+11/22/19 14:14:59.253 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-dbba-08d76f3d35d7, CurrentState = Initial
+11/22/19 14:15:08.922 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Faulted: 98570000-7590-54ee-dbba-08d76f3d35d7, CurrentState = Executing
+11/22/19 15:40:42.748 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Created: 98570000-7590-54ee-a85f-08d76f492f9f, CurrentState = Initial
+11/22/19 15:41:05.417 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Faulted: 98570000-7590-54ee-a85f-08d76f492f9f, CurrentState = Executing
+11/22/19 15:47:10.905 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-c28b-08d76f4a16fa, CurrentState = Initial
+11/22/19 15:48:00.436 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Completed: 98570000-7590-54ee-c28b-08d76f4a16fa, CurrentState = Executing
+11/22/19 17:18:54.873 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Initial
+11/22/19 17:19:15.412 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Executing

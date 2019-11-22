@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCourier.Common", "Sam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCourier.Contracts", "SampleCourier.Contracts\SampleCourier.Contracts.csproj", "{54E2D792-CB47-4310-B5F9-2BE7D0F57776}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCourier.Activities", "SampleCourier.Activities\SampleCourier.Activities.csproj", "{7D97C8BB-6D5E-47DA-A977-B9199E23419C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCourier.Models", "SampleCourier.Models\SampleCourier.Models.csproj", "{3AAEF059-9504-4C8C-957B-3E3972B3BFE1}"
 EndProject
 Global
@@ -43,10 +41,6 @@ Global
 		{54E2D792-CB47-4310-B5F9-2BE7D0F57776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54E2D792-CB47-4310-B5F9-2BE7D0F57776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54E2D792-CB47-4310-B5F9-2BE7D0F57776}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D97C8BB-6D5E-47DA-A977-B9199E23419C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D97C8BB-6D5E-47DA-A977-B9199E23419C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D97C8BB-6D5E-47DA-A977-B9199E23419C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D97C8BB-6D5E-47DA-A977-B9199E23419C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3AAEF059-9504-4C8C-957B-3E3972B3BFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3AAEF059-9504-4C8C-957B-3E3972B3BFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AAEF059-9504-4C8C-957B-3E3972B3BFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU

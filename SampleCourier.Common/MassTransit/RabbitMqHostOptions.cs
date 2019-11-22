@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dmo.MassTransit
+namespace SampleCourier.Common.MassTransit
 {
 	public class RabbitMqHostOptions
 	{
