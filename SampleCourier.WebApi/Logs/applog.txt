@@ -1,0 +1,288 @@
+10/14/19 02:08:38.982 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 11] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EfCoreRoutingSlip" requested by the login. The login failed.
+Login failed for user 'sa'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Collections.Generic.AsyncEnumerableHelpers.ToArrayWithLength[T](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncEnumerableHelpers.cs:line 48
+   at System.Collections.Generic.AsyncEnumerableHelpers.ToArray[T](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncEnumerableHelpers.cs:line 18
+   at SampleCourier.WebApi.Controllers.ExecController.Get() in C:\Users\Lenovo\Desktop\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:7d6e8035-be70-44bd-9175-5749d551954e
+Error Number:4060,State:1,Class:11
+10/14/19 02:09:25.066 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 19] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'EfCoreRoutingSlipState'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Collections.Generic.AsyncEnumerableHelpers.ToArrayWithLength[T](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncEnumerableHelpers.cs:line 48
+   at System.Collections.Generic.AsyncEnumerableHelpers.ToArray[T](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncEnumerableHelpers.cs:line 18
+   at SampleCourier.WebApi.Controllers.ExecController.Get() in C:\Users\Lenovo\Desktop\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c52ed2ea-3176-448e-9817-c01f2672ae9e
+Error Number:208,State:1,Class:16
+10/14/19 02:18:38.132 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 7] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'EfCoreRoutingSlipState'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at System.Collections.Generic.AsyncEnumerableHelpers.ToArrayWithLength[T](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncEnumerableHelpers.cs:line 48
+   at System.Collections.Generic.AsyncEnumerableHelpers.ToArray[T](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncEnumerableHelpers.cs:line 18
+   at SampleCourier.WebApi.Controllers.ExecController.Get() in C:\Users\Lenovo\Desktop\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+ClientConnectionId:0bdca10b-26cf-4c0a-9999-03807843963b
+Error Number:208,State:1,Class:16
+10/14/19 17:13:05.857 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 22] Request (98570000-7590-54ee-a85a-08d750b0a1ff): url-id = 1, count = 1
+10/14/19 17:13:06.325 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 29] Sent successfully (98570000-7590-54ee-a85a-08d750b0a1ff), duration = 413ms
+10/14/19 17:30:08.884 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 36] Request (98570000-7590-54ee-342b-08d750b303c5): url-id = 2, count = 1
+10/14/19 17:30:08.903 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 50] Sent successfully (98570000-7590-54ee-342b-08d750b303c5), duration = 17ms
+10/14/19 17:31:29.315 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 49] Request (98570000-7590-54ee-1684-08d750b333b6): url-id = 2, count = 1
+10/14/19 17:31:29.341 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 48] Sent successfully (98570000-7590-54ee-1684-08d750b333b6), duration = 23ms
+10/14/19 17:33:54.272 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 53] Request (98570000-7590-54ee-b2df-08d750b38a1c): url-id = 1, count = 1
+10/14/19 17:33:54.305 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 38] Sent successfully (98570000-7590-54ee-b2df-08d750b38a1c), duration = 31ms
+10/14/19 17:33:56.864 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 38] Request (98570000-7590-54ee-457d-08d750b38ba8): url-id = 1, count = 1
+10/14/19 17:33:56.881 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 59] Sent successfully (98570000-7590-54ee-457d-08d750b38ba8), duration = 15ms
+10/14/19 17:33:57.588 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 59] Request (98570000-7590-54ee-bee0-08d750b38c16): url-id = 1, count = 1
+10/14/19 17:33:57.596 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 38] Sent successfully (98570000-7590-54ee-bee0-08d750b38c16), duration = 6ms
+10/14/19 18:11:52.626 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 27] Request (98570000-7590-54ee-cc37-08d750b8d81d): url = string, count = 0
+10/14/19 18:52:23.168 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 57] Request (98570000-7590-54ee-2f05-08d750be80d5): url-id = 1, count = 1
+10/14/19 18:52:23.579 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 59] Sent successfully (98570000-7590-54ee-2f05-08d750be80d5), duration = 408ms
+10/14/19 19:26:48.502 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 86] Request (98570000-7590-54ee-3c4c-08d750c34fde): url = string, count = 0
+10/14/19 19:28:06.389 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 80] Request (98570000-7590-54ee-cb84-08d750c37e4a): url-id = 1, count = 1
+10/14/19 19:29:58.022 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 65] Sent successfully (98570000-7590-54ee-cb84-08d750c37e4a), duration = 102349ms
+10/18/19 23:34:44.411 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 21] Request (98570000-7590-54ee-0ca1-08d7540a9c40): url = string, count = 0
+10/18/19 23:36:48.740 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 25] Request (98570000-7590-54ee-734e-08d7540ae557): url = asasd, count = 1
+10/18/19 23:38:30.945 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 25] Request (98570000-7590-54ee-786e-08d7540b2346): url = http://localhost:5648, count = 1
+10/18/19 23:38:39.014 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 44] Sent successfully (98570000-7590-54ee-786e-08d7540b2346), duration = 5386ms
+10/18/19 23:56:12.768 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 9] Request (98570000-7590-54ee-623d-08d7540d9c2c): url = http://localhost:5648, count = 1
+10/18/19 23:56:21.517 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 20] Sent successfully (98570000-7590-54ee-623d-08d7540d9c2c), duration = 2437ms
+10/22/19 16:59:37.297 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 40] Request (98570000-7590-54ee-7c86-08d756f8135c): url = http://www.hotmail.com, count = 1
+10/22/19 16:59:46.293 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 44] Sent successfully (98570000-7590-54ee-7c86-08d756f8135c), duration = 6397ms
+10/22/19 17:05:23.195 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 15] Request (98570000-7590-54ee-011c-08d756f8e189): url = htp://www.hotmail.com, count = 1
+10/22/19 17:05:36.690 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 9] Sent successfully (98570000-7590-54ee-011c-08d756f8e189), duration = 10459ms
+10/22/19 17:15:33.652 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 22] Request (98570000-7590-54ee-756c-08d756fa4d65): url = htp://www.hotmail.com, count = 1
+10/22/19 17:15:42.331 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 18] Sent successfully (98570000-7590-54ee-756c-08d756fa4d65), duration = 7464ms
+11/22/19 10:15:41.646 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 13] Request (98570000-7590-54ee-81cc-08d76f1bc898): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 1
+11/22/19 10:15:47.260 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 13] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SampleCourier.WebApi.Controllers.RoutingSlipPublisher.Publish(Uri reqUri) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\RoutingSlipPublisher.cs:line 29
+   at SampleCourier.WebApi.Controllers.ExecController.Execute(Guid reqId, String reqUrlStr, Int32 count) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 205
+   at SampleCourier.WebApi.Controllers.ExecController.Post(ExecuteReq req) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 105
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+11/22/19 10:43:05.789 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 7] Request (98570000-7590-54ee-6ed9-08d76f1f99a7): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 1
+11/22/19 10:43:23.059 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 7] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SampleCourier.WebApi.Controllers.RoutingSlipPublisher.Publish(Uri reqUri) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\RoutingSlipPublisher.cs:line 29
+   at SampleCourier.WebApi.Controllers.ExecController.Execute(Guid reqId, String reqUrlStr, Int32 count) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 205
+   at SampleCourier.WebApi.Controllers.ExecController.Post(ExecuteReq req) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 105
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+11/22/19 10:44:52.431 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 20] Request (98570000-7590-54ee-215a-08d76f1fdbdd): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 1
+11/22/19 10:45:43.918 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 20] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SampleCourier.WebApi.Controllers.RoutingSlipPublisher.Publish(Uri reqUri) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\RoutingSlipPublisher.cs:line 29
+   at SampleCourier.WebApi.Controllers.ExecController.Execute(Guid reqId, String reqUrlStr, Int32 count) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 205
+   at SampleCourier.WebApi.Controllers.ExecController.Post(ExecuteReq req) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 105
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+11/22/19 10:46:30.015 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 26] Request (98570000-7590-54ee-c377-08d76f201613): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 1
+11/22/19 10:46:58.189 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 26] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SampleCourier.WebApi.Controllers.RoutingSlipPublisher.Publish(Uri reqUri) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\RoutingSlipPublisher.cs:line 29
+   at SampleCourier.WebApi.Controllers.ExecController.Execute(Guid reqId, String reqUrlStr, Int32 count) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 205
+   at SampleCourier.WebApi.Controllers.ExecController.Post(ExecuteReq req) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 105
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+11/22/19 10:52:18.179 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 40] Request (98570000-7590-54ee-f3f2-08d76f20e5d4): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 1
+11/22/19 10:53:05.289 [ERR] [Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware] [ThreadId: 40] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SampleCourier.WebApi.Controllers.RoutingSlipPublisher.Publish(Uri reqUri) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\RoutingSlipPublisher.cs:line 29
+   at SampleCourier.WebApi.Controllers.ExecController.Execute(Guid reqId, String reqUrlStr, Int32 count) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 205
+   at SampleCourier.WebApi.Controllers.ExecController.Post(ExecuteReq req) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.WebApi\Controllers\ExecController.cs:line 105
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+11/22/19 10:54:30.046 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 10] Request (98570000-7590-54ee-1bce-08d76f21346e): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/22/19 10:54:44.661 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Sent successfully (98570000-7590-54ee-1bce-08d76f21346e), duration = 11752ms
+11/22/19 10:56:10.058 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Request (98570000-7590-54ee-e881-08d76f21700a): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/22/19 10:56:12.979 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 10] Sent successfully (98570000-7590-54ee-e881-08d76f21700a), duration = 1291ms
+11/22/19 11:25:53.928 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 9] Request (98570000-7590-54ee-c622-08d76f25974f): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/22/19 11:26:04.877 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 18] Sent successfully (98570000-7590-54ee-c622-08d76f25974f), duration = 1911ms
+11/22/19 11:30:24.838 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Request (98570000-7590-54ee-39f7-08d76f2638c9): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/22/19 11:30:26.319 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 15] Sent successfully (98570000-7590-54ee-39f7-08d76f2638c9), duration = 1429ms
+11/22/19 11:36:14.966 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Request (98570000-7590-54ee-84bd-08d76f27097a): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75, count = 0
+11/22/19 11:36:16.522 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Sent successfully (98570000-7590-54ee-84bd-08d76f27097a), duration = 1495ms

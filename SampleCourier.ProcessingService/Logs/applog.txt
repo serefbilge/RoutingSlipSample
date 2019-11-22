@@ -1,0 +1,132 @@
+10/14/19 17:13:06.686 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 6] Validated Request 98570000-7590-54ee-30b0-08d750b0a20a for address http://i.imgur.com/Iroma7d.png
+10/14/19 17:13:14.401 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: http://i.imgur.com/Iroma7d.png
+10/14/19 17:13:14.546 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 17:54:15.988 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 10] Validated Request 98570000-7590-54ee-06b9-08d750b38a1d for address http://i.imgur.com/Iroma7d.png
+10/14/19 17:54:15.988 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 12] Validated Request 98570000-7590-54ee-7386-08d750b303c5 for address http://i.imgur.com/NK8eZUe.jpg
+10/14/19 17:54:15.988 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 11] Validated Request 98570000-7590-54ee-08ca-08d750b38c17 for address http://i.imgur.com/Iroma7d.png
+10/14/19 17:54:15.988 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 8] Validated Request 98570000-7590-54ee-75c8-08d750b38ba8 for address http://i.imgur.com/Iroma7d.png
+10/14/19 17:54:15.988 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-7d8d-08d750b333b6 for address http://i.imgur.com/NK8eZUe.jpg
+10/14/19 17:54:52.653 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: http://i.imgur.com/Iroma7d.png
+10/14/19 17:54:52.653 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Retrieve Content: http://i.imgur.com/NK8eZUe.jpg
+10/14/19 17:54:52.653 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://i.imgur.com/Iroma7d.png
+10/14/19 17:54:53.850 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 10] Retrieve Content: http://i.imgur.com/Iroma7d.png
+10/14/19 17:54:53.850 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 8] Retrieve Content: http://i.imgur.com/NK8eZUe.jpg
+10/14/19 17:54:54.012 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 29] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 17:54:54.012 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 27] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 17:54:54.012 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 17:54:54.012 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 26] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 17:54:54.012 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 28] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 18:52:23.574 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 34] Validated Request 98570000-7590-54ee-ecf6-08d750be80d7 for address http://i.imgur.com/Iroma7d.png
+10/14/19 18:52:23.611 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 34] Retrieve Content: http://i.imgur.com/Iroma7d.png
+10/14/19 18:52:31.342 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 36] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/14/19 19:29:58.029 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 58] Validated Request 98570000-7590-54ee-830b-08d750c3c0cc for address http://i.imgur.com/Iroma7d.png
+10/14/19 19:29:58.045 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 60] Retrieve Content: http://i.imgur.com/Iroma7d.png
+10/14/19 19:30:02.089 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 64] Failed to retrieve image: "Server returned a response status code: 404 (NotFound)"
+10/18/19 23:38:41.078 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 29] Validated Request 98570000-7590-54ee-772d-08d7540b27d5 for address http://localhost:5648/
+10/18/19 23:38:41.467 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: http://localhost:5648/
+10/18/19 23:38:46.725 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Exception from HttpClient
+10/18/19 23:38:46.761 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: http://localhost:5648/
+10/18/19 23:38:53.689 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Exception from HttpClient
+10/18/19 23:38:53.716 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: http://localhost:5648/
+10/18/19 23:38:55.608 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Exception from HttpClient
+10/18/19 23:38:55.632 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: http://localhost:5648/
+10/18/19 23:38:57.213 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Exception from HttpClient
+10/18/19 23:38:57.234 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: http://localhost:5648/
+10/18/19 23:38:58.616 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Exception from HttpClient
+10/18/19 23:38:58.636 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: http://localhost:5648/
+10/18/19 23:38:59.942 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Exception from HttpClient
+10/18/19 23:56:27.521 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-11e5-08d7540da129 for address http://localhost:5648/
+10/18/19 23:56:27.988 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: http://localhost:5648/
+10/18/19 23:56:28.027 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Exception from HttpClient
+10/18/19 23:56:28.110 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: http://localhost:5648/
+10/18/19 23:56:28.141 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Exception from HttpClient
+10/18/19 23:56:28.221 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: http://localhost:5648/
+10/18/19 23:56:28.255 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Exception from HttpClient
+10/18/19 23:56:28.316 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: http://localhost:5648/
+10/18/19 23:56:28.341 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Exception from HttpClient
+10/18/19 23:56:28.399 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: http://localhost:5648/
+10/18/19 23:56:28.425 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Exception from HttpClient
+10/18/19 23:56:28.488 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: http://localhost:5648/
+10/18/19 23:56:28.515 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Exception from HttpClient
+10/22/19 16:59:48.738 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 14] Validated Request 98570000-7590-54ee-2e2e-08d756f816ab for address http://www.hotmail.com/
+10/22/19 16:59:50.133 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://www.hotmail.com/
+10/22/19 16:59:50.173 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Exception from HttpClient
+10/22/19 16:59:50.257 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://www.hotmail.com/
+10/22/19 16:59:50.291 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Exception from HttpClient
+10/22/19 16:59:50.365 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://www.hotmail.com/
+10/22/19 16:59:50.397 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Exception from HttpClient
+10/22/19 16:59:50.468 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://www.hotmail.com/
+10/22/19 16:59:50.496 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Exception from HttpClient
+10/22/19 16:59:50.563 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://www.hotmail.com/
+10/22/19 16:59:50.592 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Exception from HttpClient
+10/22/19 16:59:50.659 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: http://www.hotmail.com/
+10/22/19 16:59:50.686 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Exception from HttpClient
+10/22/19 17:05:38.140 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 22] Validated Request 98570000-7590-54ee-2cc8-08d756f8e4bd for address htp://www.hotmail.com/
+10/22/19 17:05:38.546 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:05:38.639 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:05:38.714 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:05:38.789 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:05:38.859 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:05:38.941 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 16] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:15:42.328 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 11] Validated Request 98570000-7590-54ee-ef19-08d756fa4f56 for address htp://www.hotmail.com/
+10/22/19 17:15:55.498 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:15:56.669 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:15:57.233 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:15:57.782 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:15:58.314 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: htp://www.hotmail.com/
+10/22/19 17:15:58.816 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: htp://www.hotmail.com/
+11/22/19 10:54:52.023 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-d2ac-08d76f213704 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 10:54:59.017 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 12] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 10:55:02.954 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 7] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 10:55:06.747 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Success, copying to local file: "..\..\bin\SampleCourier.ProcessingService\Debug\netcoreapp2.2\content\98570000-7590-54ee-fc6a-08d76f21497b.png%22"
+11/22/19 10:55:06.784 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Exception: 
+System.IO.IOException: Dosya adı, dizin adı veya birim etiketi sözdizimi hatalı : 'C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\bin\SampleCourier.ProcessingService\Debug\netcoreapp2.2\content\98570000-7590-54ee-fc6a-08d76f21497b.png"'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.File.Create(String path, Int32 bufferSize, FileOptions options)
+   at SampleCourier.Activities.Retrieve.RetrieveActivity.Execute(ExecuteContext`1 context) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.Activities\Retrieve\RetrieveActivity.cs:line 36
+11/22/19 10:55:16.056 [ERR] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 7] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/22/19 10:56:15.653 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 13] Validated Request 98570000-7590-54ee-5401-08d76f2171c5 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 10:56:19.965 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 13] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 10:56:22.899 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:24:22.375 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:24:22.939 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-cea7-08d76f256113.png%22"
+11/22/19 11:24:22.945 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Exception: 
+System.IO.IOException: Dosya adı, dizin adı veya birim etiketi sözdizimi hatalı : 'C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-cea7-08d76f256113.png"'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.File.Create(String path, Int32 bufferSize, FileOptions options)
+   at SampleCourier.Activities.Retrieve.RetrieveActivity.Execute(ExecuteContext`1 context) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.Activities\Retrieve\RetrieveActivity.cs:line 36
+11/22/19 11:24:23.495 [ERR] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 12] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/22/19 11:26:24.757 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 26] Validated Request 98570000-7590-54ee-7d90-08d76f259d9f for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:26:28.852 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 12] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:26:34.668 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 10] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:27:12.171 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-1960-08d76f25b8a3.png%22"
+11/22/19 11:29:45.705 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 7] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:29:50.676 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-41d7-08d76f2622d8.png"
+11/22/19 11:29:50.683 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Completed, length = 5056
+11/22/19 11:29:52.382 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:29:52.407 [ERR] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.Activities\PostProcess\PostProcessActivity.cs:line 24
+11/22/19 11:29:56.174 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Hit here from fault in PostProcessActivity: "C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-41d7-08d76f2622d8.png"
+11/22/19 11:29:57.205 [ERR] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/22/19 11:30:29.345 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 9] Validated Request 98570000-7590-54ee-d4ec-08d76f26396d for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:30:30.481 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 31] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:30:31.873 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:31:17.148 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-cbb9-08d76f26401f.png"
+11/22/19 11:31:21.279 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 5056
+11/22/19 11:31:33.804 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 29] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/22/19 11:31:33.827 [ERR] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 29] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.Activities\PostProcess\PostProcessActivity.cs:line 24
+11/22/19 11:31:42.385 [ERR] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 29] Hit here from fault in PostProcessActivity: "C:\Users\Lenovo\Desktop\Masstransit Samples\routing slip\SampleCourierNetCore-master\src\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-cbb9-08d76f26401f.png"
+11/22/19 11:31:44.263 [ERR] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/22/19 11:36:17.687 [INF] [SampleCourier.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-49dc-08d76f270a2c for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 11:36:18.808 [INF] [SampleCourier.Activities.PreProcess.PreProcessActivity] [ThreadId: 7] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 11:36:19.595 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 27] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/22/19 11:36:34.752 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-ed56-08d76f270db0.png"
+11/22/19 11:36:34.760 [INF] [SampleCourier.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Completed, length = 12373
+11/22/19 11:36:40.206 [INF] [SampleCourier.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
