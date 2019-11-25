@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SampleCourier.ProcessingService.Config;
+using SampleCourier.Common.AspNetCore;
+using MassTransit.RabbitMqTransport;
 
 namespace SampleCourier.ProcessingService
 {
@@ -26,12 +28,14 @@ namespace SampleCourier.ProcessingService
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddMassTransitWithRabbitMq(Configuration);
-			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);			
-		}
+			//services.AddMassTransitWithRabbitMq(Configuration);
+			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddCommonServices(Configuration);
+            services.AddCommonServices(Configuration, (host, configurator, sp) => configurator.ConfigureActivities(host, sp, Configuration));
+        }
 
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app,IHostingEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app,IHostingEnvironment env)
 		{
 			if (env.IsDevelopment())
 			{

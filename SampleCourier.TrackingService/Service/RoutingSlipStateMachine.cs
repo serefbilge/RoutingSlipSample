@@ -5,6 +5,7 @@ using Automatonymous;
 using MassTransit.Courier.Contracts;
 using Microsoft.Extensions.Logging;
 using SampleCourier.Contracts;
+using SampleCourier.Contracts.Events;
 using SampleCourier.Models;
 
 namespace SampleCourier.TrackingService.Service

@@ -100,18 +100,17 @@ namespace SampleCourier.ProcessingService.Config
                     var postProcessOpts = actOpts.PostProcessActivity;
                     var compPostProcessOpts = actOpts.CompensatePostProcessActivity;
 
-                    cfg.ReceiveEndpoint(host, postProcessOpts.QueueName, e =>
-                    {
-                        var compAddress = new Uri(host.Address, compPostProcessOpts.QueueName);
+                    //cfg.ReceiveEndpoint(host, postProcessOpts.QueueName, e =>
+                    //{
+                    //    var compAddress = new Uri(host.Address, compPostProcessOpts.QueueName);
 
-                        e.PrefetchCount = (ushort)postProcessOpts.PrefetchCount;
-                        e.ExecuteActivityHost<PostProcessActivity, PostProcessArguments>(compAddress,
-                            c => c.UseRetry(r => r.Immediate(postProcessOpts.RetryLimit)));
-                    });
+                    //    e.PrefetchCount = (ushort)postProcessOpts.PrefetchCount;
+                    //    e.ExecuteActivityHost<PostProcessActivity, PostProcessArguments>(compAddress, c => c.UseRetry(r => r.Immediate(postProcessOpts.RetryLimit)));
+                    //});
 
-                    cfg.ReceiveEndpoint(host, compPostProcessOpts.QueueName,
-                        e => e.CompensateActivityHost<PostProcessActivity, PostProcessLog>(c =>
-                             c.UseRetry(r => r.Immediate(compPostProcessOpts.RetryLimit))));
+                    //cfg.ReceiveEndpoint(host, compPostProcessOpts.QueueName,
+                    //    e => e.CompensateActivityHost<PostProcessActivity, PostProcessLog>(c =>
+                    //         c.UseRetry(r => r.Immediate(compPostProcessOpts.RetryLimit))));
 
                     // Serilog
                     cfg.UseSerilog();

@@ -182,3 +182,288 @@ System.Exception: There is a fault in PostProcess Activity!
 11/22/19 17:19:09.599 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-744f-08d76f56f0ea.png"
 11/22/19 17:19:09.613 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Completed, length = 12373
 11/22/19 17:19:09.694 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/25/19 09:49:12.562 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.TypeLoadException: Method 'ReceiveEndpoint' in type 'MassTransit.RabbitMqTransport.Configurators.RabbitMqBusFactoryConfigurator' from assembly 'MassTransit.RabbitMqTransport, Version=5.2.1.1808, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa' does not have an implementation.
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c.<AddMassTransitWithRabbitMq>b__0_0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 51
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 09:49:14.855 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 8] Connection id ""0HLRHEEAVFP0U"", Request id ""0HLRHEEAVFP0U:00000001"": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot write to the response body, the response has completed.
+Object name: 'HttpResponseStream'.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.<ValidateState>g__ThrowObjectDisposedException|24_0()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/25/19 09:55:40.828 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.TypeLoadException: Method 'ReceiveEndpoint' in type 'MassTransit.RabbitMqTransport.Configurators.RabbitMqBusFactoryConfigurator' from assembly 'MassTransit.RabbitMqTransport, Version=5.2.1.1808, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa' does not have an implementation.
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c.<AddMassTransitWithRabbitMq>b__0_0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 51
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 10:00:13.729 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.TypeLoadException: Method 'ReceiveEndpoint' in type 'MassTransit.RabbitMqTransport.Configurators.RabbitMqBusFactoryConfigurator' from assembly 'MassTransit.RabbitMqTransport, Version=5.2.1.1808, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa' does not have an implementation.
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c.<AddMassTransitWithRabbitMq>b__0_0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 51
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 10:00:13.992 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 6] Connection id ""0HLRHEKFDO7H2"", Request id ""0HLRHEKFDO7H2:00000001"": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/25/19 10:02:48.272 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.TypeLoadException: Method 'ReceiveEndpoint' in type 'MassTransit.RabbitMqTransport.Configurators.RabbitMqBusFactoryConfigurator' from assembly 'MassTransit.RabbitMqTransport, Version=5.2.1.1808, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa' does not have an implementation.
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c.<AddMassTransitWithRabbitMq>b__0_0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 51
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 10:02:48.533 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 6] Connection id ""0HLRHELTFL2EJ"", Request id ""0HLRHELTFL2EJ:00000001"": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/25/19 10:05:40.115 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 8] Validated Request 98570000-7590-54ee-805e-08d77175e0c4 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 10:05:40.553 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 10:05:40.596 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 11] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 10:05:41.400 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-8595-08d77175e20f.png"
+11/25/19 10:05:41.416 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 5056
+11/25/19 10:05:41.607 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 8] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 14:21:27.293 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivities(IRabbitMqBusFactoryConfigurator cfg, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 202
+   at SampleCourier.ProcessingService.Startup.<ConfigureServices>b__4_0(IRabbitMqHost host, IRabbitMqBusFactoryConfigurator configurator, IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 34
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass3_0.<BusFactory>b__0(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 146
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.BusFactory(IServiceProvider serviceProvider, Action`3 configurator) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 77
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass2_0.<AddMassTransitConf>b__1(IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 65
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 14:21:34.832 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivities(IRabbitMqBusFactoryConfigurator cfg, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 202
+   at SampleCourier.ProcessingService.Startup.<ConfigureServices>b__4_0(IRabbitMqHost host, IRabbitMqBusFactoryConfigurator configurator, IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 34
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass3_0.<BusFactory>b__0(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 146
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.BusFactory(IServiceProvider serviceProvider, Action`3 configurator) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 77
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass2_0.<AddMassTransitConf>b__1(IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 65
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 14:21:42.323 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivities(IRabbitMqBusFactoryConfigurator cfg, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 202
+   at SampleCourier.ProcessingService.Startup.<ConfigureServices>b__4_0(IRabbitMqHost host, IRabbitMqBusFactoryConfigurator configurator, IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 34
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass3_0.<BusFactory>b__0(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 146
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.BusFactory(IServiceProvider serviceProvider, Action`3 configurator) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 77
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass2_0.<AddMassTransitConf>b__1(IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 65
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 14:25:23.795 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivities(IRabbitMqBusFactoryConfigurator cfg, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 202
+   at SampleCourier.ProcessingService.Startup.<ConfigureServices>b__4_0(IRabbitMqHost host, IRabbitMqBusFactoryConfigurator configurator, IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 34
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass3_0.<BusFactory>b__0(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 146
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.BusFactory(IServiceProvider serviceProvider, Action`3 configurator) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 77
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass2_0.<AddMassTransitConf>b__1(IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 65
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 14:25:31.368 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivities(IRabbitMqBusFactoryConfigurator cfg, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 202
+   at SampleCourier.ProcessingService.Startup.<ConfigureServices>b__4_0(IRabbitMqHost host, IRabbitMqBusFactoryConfigurator configurator, IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 34
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass3_0.<BusFactory>b__0(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 146
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.BusFactory(IServiceProvider serviceProvider, Action`3 configurator) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 77
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass2_0.<AddMassTransitConf>b__1(IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 65
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/25/19 14:25:38.809 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivities(IRabbitMqBusFactoryConfigurator cfg, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 202
+   at SampleCourier.ProcessingService.Startup.<ConfigureServices>b__4_0(IRabbitMqHost host, IRabbitMqBusFactoryConfigurator configurator, IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 34
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass3_0.<BusFactory>b__0(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 146
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure)
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.BusFactory(IServiceProvider serviceProvider, Action`3 configurator) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 77
+   at SampleCourier.Common.MassTransit.ServiceCollectionExtensions.<>c__DisplayClass2_0.<AddMassTransitConf>b__1(IServiceProvider sp) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\ServiceCollectionExtensions.cs:line 65
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.AspNetCore.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\AspNetCore\AppBuilderExts.cs:line 33
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()

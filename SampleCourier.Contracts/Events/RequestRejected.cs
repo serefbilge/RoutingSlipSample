@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SampleCourier.Contracts
+namespace SampleCourier.Contracts.Events
 {
 	/// <summary>
 	/// Published when a request is rejected

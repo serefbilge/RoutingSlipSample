@@ -12,12 +12,12 @@ namespace SampleCourier.Common.OperationResults
             Id = id;
         }
 
-        public IdentifierResult(string errorCode, string errorMessage) : base(errorCode, errorMessage)
+        public IdentifierResult(string errorMessage) : base(errorMessage)
         {
         }
 
         [JsonConstructor]
-        public IdentifierResult(Guid? id, bool successful, string errorCode, string errorMessage, DateTimeOffset created) : base(successful, errorCode, errorMessage, created)
+        public IdentifierResult(Guid? id, bool successful, string errorMessage, DateTimeOffset created) : base(successful, errorMessage, created)
         {
             Id = id;
         }

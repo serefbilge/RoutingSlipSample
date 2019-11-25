@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SampleCourier.WebApi.Config;
+using SampleCourier.Common.AspNetCore;
 
 namespace SampleCourier.WebApi
 {
@@ -27,8 +28,9 @@ namespace SampleCourier.WebApi
 		public void ConfigureServices(IServiceCollection services)
 		{			
 			services.AddMassTransitWithRabbitMq(Configuration);
+            services.AddCommonServices(Configuration);
 
-			services.AddSwaggerGen(opts =>
+            services.AddSwaggerGen(opts =>
 			{
 				opts.DescribeAllEnumsAsStrings();
 

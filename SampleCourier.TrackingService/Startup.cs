@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SampleCourier.TrackingService.Config;
+using SampleCourier.Common.AspNetCore;
 
 namespace SampleCourier.TrackingService
 {
@@ -27,8 +28,9 @@ namespace SampleCourier.TrackingService
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddMassTransitWithRabbitMq(Configuration);
-			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);			
-		}
+			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddCommonServices(Configuration);
+        }
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app,IHostingEnvironment env)

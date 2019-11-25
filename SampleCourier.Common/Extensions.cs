@@ -1,6 +1,7 @@
 ﻿// Copyright (c) DMO Consulting LLC. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using MassTransit;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -195,26 +196,6 @@ namespace SampleCourier.Common
 				},cancelToken)))).SelectMany(l => l).ToArray();
 		}
 
-        public static string UnderscorizePascalCamelCase(this Type type, string namespaceToOmit = null)
-        {
-            var typeNs = type.Namespace;
-            var typeName = type.Name;
-
-            if (namespaceToOmit != null)
-                if (typeNs.StartsWith(namespaceToOmit))
-                    typeNs = typeNs.Substring(namespaceToOmit.Length).Trim('.');
-                else
-                    throw new Exception();
-
-            if (type.IsInterface && typeName.StartsWith('I'))
-                typeName = typeName.Substring(1);
-
-            string Underscorize(string s) => Regex.Replace(s, "(.)([A-Z])", "$1_$2");
-
-            var nameSegment = Underscorize(typeName);
-            var nsSegments = typeNs.Split(new[] { '.' }).Select(Underscorize);
-
-            return string.Concat(string.Join('.', nsSegments), ".", typeName).ToLowerInvariant();
-        }
+        
     }
 }

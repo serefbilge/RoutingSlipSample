@@ -40,3 +40,16 @@
 11/22/19 15:48:00.436 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Completed: 98570000-7590-54ee-c28b-08d76f4a16fa, CurrentState = Executing
 11/22/19 17:18:54.873 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Initial
 11/22/19 17:19:15.412 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Executing
+11/25/19 10:05:40.250 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Created: 98570000-7590-54ee-45a4-08d77175e0c4, CurrentState = Initial
+11/25/19 10:05:41.653 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-45a4-08d77175e0c4, CurrentState = Executing
+11/25/19 14:28:34.656 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkqh9jqbdmzdgw4r1?durable=false&autodelete=true
+11/25/19 14:35:11.738 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkqho3ubdmzdg55bt?durable=false&autodelete=true
+11/25/19 14:52:40.488 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkq714rbdmzd8xz83?durable=false&autodelete=true
+11/25/19 14:53:22.254 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Created: 98570000-7590-54ee-6641-08d7719e1020, CurrentState = Initial
+11/25/19 14:58:51.104 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkq7zbmbdmzd8sibk?durable=false&autodelete=true
+11/25/19 14:59:46.406 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Created: 98570000-7590-54ee-390e-08d7719eefc6, CurrentState = Initial
+11/25/19 15:07:47.895 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkq7aopbdmzdeyibe?durable=false&autodelete=true
+11/25/19 15:08:37.655 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 8] Slip Created: 98570000-7590-54ee-492d-08d771a03163, CurrentState = Initial
+11/25/19 15:15:46.675 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkqhi91bdmzdej1rk?durable=false&autodelete=true
+11/25/19 15:20:16.165 [WRN] [MassTransit.MassTransitBus] [ThreadId: 1] The bus was already started, additional Start attempts are ignored: rabbitmq://localhost/DESKTOP207JCUT_dotnet_bus_ubmoyydi1bkq7tazbdmzdequy5?durable=false&autodelete=true
+11/25/19 15:20:50.316 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-b3fa-08d771a1e5d3, CurrentState = Initial

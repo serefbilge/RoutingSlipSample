@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using MassTransit.Courier;
 using MassTransit.Logging;
 using SampleCourier.Contracts;
+using SampleCourier.Contracts.Events;
 
 namespace SampleCourier.ProcessingService.Activities.Validate
 {

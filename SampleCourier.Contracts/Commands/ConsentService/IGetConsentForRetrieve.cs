@@ -4,9 +4,8 @@ using System.Text;
 
 namespace SampleCourier.Contracts.Commands.ConsentService
 {
-    public interface IGetConsentOfRetrieve : ICommand
+    public interface IGetConsentForRetrieve : ICommand
     {
-        string ResponseNote { get; }
-        bool Affirmative { get; }
+        Uri Address { get; }
     }
 }
