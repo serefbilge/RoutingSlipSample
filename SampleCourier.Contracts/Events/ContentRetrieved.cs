@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace SampleCourier.Contracts
+namespace SampleCourier.Contracts.Events
 {
-	public interface ContentRetrieved
-	{
+	public interface ContentRetrieved : IEvent
+    {
 		/// <summary>
 		/// When the content was retrieved
 		/// </summary>

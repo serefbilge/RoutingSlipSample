@@ -24,7 +24,7 @@ namespace SampleCourier.TrackingService.Config
 
 	public static class MassTransitExts
 	{
-		public static void AddMassTransitWithRabbitMq(this IServiceCollection services,IConfiguration appConfig)
+		public static void AddMassTransitWithRabbitMq(this IServiceCollection services, IConfiguration appConfig)
 		{
 			if (services == null)
 				throw new ArgumentNullException("services");
@@ -32,12 +32,12 @@ namespace SampleCourier.TrackingService.Config
 			if (appConfig == null)
 				throw new ArgumentNullException("appConfig");
 
-			var cfgSection = appConfig.GetSection("RabbitMqHost");
+			//var cfgSection = appConfig.GetSection("RabbitMqHost");
 
-			if (!cfgSection.Exists())
-				throw new InvalidOperationException("Appsettings: 'RabbitMqHost' section is not found");
+			//if (!cfgSection.Exists())
+			//	throw new InvalidOperationException("Appsettings: 'RabbitMqHost' section is not found");
 
-			services.Configure<RabbitMqHostOptions>(cfgSection);
+			//services.Configure<RabbitMqHostOptions>(cfgSection);
 
 			var epSection = appConfig.GetSection("MqEndpoints");
 
@@ -63,7 +63,7 @@ namespace SampleCourier.TrackingService.Config
 
 			services.AddSingleton<ValidateActivityMetrics>();
 
-			services.AddScoped<RoutingSlipMetricsConsumer>(svcProv =>
+			services.AddScoped(svcProv =>
 			{
 				var metrics = svcProv.GetService<RoutingSlipMetrics>();
 				return new RoutingSlipMetricsConsumer(metrics);
@@ -91,14 +91,13 @@ namespace SampleCourier.TrackingService.Config
 
 			services.AddSingleton(svcProv =>
 			{
-				var hostOpts = svcProv.GetService<IOptions<RabbitMqHostOptions>>().Value;
 				var epOpts = svcProv.GetService<IOptions<MqEndpointOptions>>().Value;
 				var machine = svcProv.GetService<RoutingSlipStateMachine>();
 				var repository = svcProv.GetService<ISagaRepository<RoutingSlipState>>();
 
 				return Bus.Factory.CreateUsingRabbitMq(cfg =>
 				{
-					var host = cfg.CreateHost(hostOpts);
+					var host = cfg.CreateHost(appConfig);
 
 					cfg.ReceiveEndpoint(host,epOpts.Metrics.QueueName,e =>
 					{

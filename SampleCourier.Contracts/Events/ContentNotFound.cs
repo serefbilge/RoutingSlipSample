@@ -1,8 +1,9 @@
 ﻿using System;
+using SampleCourier.Contracts;
 
-namespace SampleCourier.Contracts
+namespace SampleCourier.Contracts.Events
 {
-	public interface ContentNotFound
+	public interface ContentNotFound : IEvent
 	{
 		/// <summary>
 		/// The timestamp that the event occurred

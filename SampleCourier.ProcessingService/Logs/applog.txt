@@ -182,3 +182,340 @@ System.Exception: There is a fault in PostProcess Activity!
 11/22/19 17:19:09.599 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-744f-08d76f56f0ea.png"
 11/22/19 17:19:09.613 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Completed, length = 12373
 11/22/19 17:19:09.694 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75
+11/25/19 15:28:20.305 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 10] Validated Request 98570000-7590-54ee-424c-08d771a2f45e for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:24.260 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:28.610 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:29.079 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-9f26-08d771a2fa18.png"
+11/25/19 15:28:29.092 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 5056
+11/25/19 15:28:29.185 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 11] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:53.694 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 6] Validated Request 98570000-7590-54ee-60b0-08d771a308c2 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:54.620 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:55.594 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 18] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:28:55.821 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-59a1-08d771a30a09.png"
+11/25/19 15:28:55.837 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Completed, length = 5056
+11/25/19 15:28:59.595 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 6] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:30:30.519 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 13] Validated Request 98570000-7590-54ee-935c-08d771a34205 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:30:35.891 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 11] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:30:39.708 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:30:40.142 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-30af-08d771a34837.png"
+11/25/19 15:30:40.154 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Completed, length = 5056
+11/25/19 15:30:41.675 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 15:30:45.760 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/25/19 15:30:51.811 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 9] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-30af-08d771a34837.png"
+11/25/19 15:30:55.415 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 7] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/25/19 17:16:51.970 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 38] Validated Request 98570000-7590-54ee-2a70-08d771b1aa9d for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 17:18:56.668 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 36] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 17:19:25.098 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 31] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 17:19:25.722 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 26] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-6148-08d771b279c3.png"
+11/25/19 17:19:25.758 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 26] Completed, length = 5056
+11/25/19 17:37:56.351 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 15] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 17:37:56.380 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 15] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/25/19 17:38:13.369 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 42] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/25/19 17:38:13.390 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 42] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/25/19 17:38:14.629 [ERR] [MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer] [ThreadId: 17] An error occurred trying to NACK a message with delivery tag 1: "RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text=\"End of stream\", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı. ---> System.Net.Sockets.SocketException: Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.Write(Byte[] buffer)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer.RabbitMQ.Client.IBasicConsumer.HandleBasicDeliver(String consumerTag, UInt64 deliveryTag, Boolean redelivered, String exchange, String routingKey, IBasicProperties properties, Byte[] body) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\Pipeline\RabbitMqBasicConsumer.cs:line 170"
+11/25/19 17:38:32.324 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-6148-08d771b279c3.png"
+11/25/19 17:38:32.324 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 42] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-6148-08d771b279c3.png"
+11/25/19 17:38:44.901 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 4] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/25/19 17:38:44.901 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 42] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/26/19 11:20:40.565 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.Reflection.TargetParameterCountException: Parameter count mismatch.
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivity(IRabbitMqBusFactoryConfigurator cfg, Type activityType, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 77
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_1.<AddMassTransitWithRabbitMq>b__1(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 74
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\RabbitMqBusFactory.cs:line 43
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.MassTransit.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\AppBuilderExts.cs:line 23
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/26/19 11:20:40.938 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 8] Connection id ""0HLRI9635CE94"", Request id ""0HLRI9635CE94:00000001"": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.Extensions.RazorViews.BaseView.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 11:20:40.938 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 9] Connection id ""0HLRI9635CE95"", Request id ""0HLRI9635CE95:00000001"": An unhandled exception was thrown by the application.
+System.ArgumentOutOfRangeException: Index and count must refer to a location within the buffer.
+Parameter name: chars
+   at System.Text.EncoderNLS.GetBytes(Char[] chars, Int32 charIndex, Int32 charCount, Byte[] bytes, Int32 byteIndex, Boolean flush)
+   at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 11:30:39.153 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.Reflection.TargetParameterCountException: Parameter count mismatch.
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivity(IRabbitMqBusFactoryConfigurator cfg, Type activityType, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 77
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_1.<AddMassTransitWithRabbitMq>b__1(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 74
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\RabbitMqBusFactory.cs:line 43
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.MassTransit.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\AppBuilderExts.cs:line 23
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/26/19 11:30:39.465 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 8] Connection id ""0HLRI9BLHOMNJ"", Request id ""0HLRI9BLHOMNJ:00000001"": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 16:22:01.945 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 12] Validated Request 98570000-7590-54ee-0c1e-08d772739c0f for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 16:22:04.486 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 6] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 16:22:05.842 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 8] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 16:22:06.453 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-d4c4-08d77273a236.png"
+11/26/19 16:22:06.468 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Completed, length = 5056
+11/26/19 16:22:08.678 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 6] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 16:22:08.700 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 6] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/26/19 16:22:12.026 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-d4c4-08d77273a236.png"
+11/26/19 16:22:12.865 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 17] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/26/19 17:00:31.593 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 11] Validated Request 98570000-7590-54ee-e904-08d77278fdc7 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:04:42.455 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 8] Validated Request 98570000-7590-54ee-7039-08d772798659 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:11:14.488 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 6] Validated Request 98570000-7590-54ee-d4ff-08d7727a7a7b for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:18:38.462 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 12] Validated Request 98570000-7590-54ee-b771-08d7727b85cf for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:18:41.299 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 9] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:18:43.988 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:18:44.515 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-e179-08d7727b8b9d.png"
+11/26/19 17:18:44.531 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 5] Completed, length = 5056
+11/26/19 17:18:49.090 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 11] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 17:18:49.111 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 11] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/26/19 17:18:53.343 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-e179-08d7727b8b9d.png"
+11/26/19 17:18:55.527 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 29] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/26/19 17:39:56.015 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivity(IRabbitMqBusFactoryConfigurator cfg, Type activityType, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 113
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_1.<AddMassTransitWithRabbitMq>b__1(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 62
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\RabbitMqBusFactory.cs:line 41
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.MassTransit.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\AppBuilderExts.cs:line 23
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/26/19 17:39:56.424 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 8] Connection id ""0HLRIFQ0QIBGI"", Request id ""0HLRIFQ0QIBGI:00000001"": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 17:39:56.424 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 4] Connection id ""0HLRIFQ0QIBGJ"", Request id ""0HLRIFQ0QIBGJ:00000001"": An unhandled exception was thrown by the application.
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at System.IO.StreamWriter.Write(String value)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 17:56:18.970 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivity(IRabbitMqBusFactoryConfigurator cfg, Type activityType, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 85
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__1(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 73
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\RabbitMqBusFactory.cs:line 41
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.MassTransit.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\AppBuilderExts.cs:line 23
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/26/19 17:56:19.264 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 7] Connection id ""0HLRIG35O5TUD"", Request id ""0HLRIG35O5TUD:00000001"": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 18:00:02.146 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivity(IRabbitMqBusFactoryConfigurator cfg, Type activityType, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 85
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__1(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 73
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\RabbitMqBusFactory.cs:line 41
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.MassTransit.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\AppBuilderExts.cs:line 23
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/26/19 18:00:02.506 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 6] Connection id ""0HLRIG5892ETD"", Request id ""0HLRIG5892ETD:00000001"": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Collection was modified; enumeration operation may not execute.
+   at System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 18:03:21.038 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SampleCourier.Common.MassTransit.MassTransitExts.ConfigureActivity(IRabbitMqBusFactoryConfigurator cfg, Type activityType, IRabbitMqHost host, IServiceProvider serviceProvider, IConfiguration svcCfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\MassTransitExts.cs:line 86
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__1(IRabbitMqBusFactoryConfigurator cfg) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 73
+   at MassTransit.RabbitMqTransport.RabbitMqBusFactory.Create(Action`1 configure) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\RabbitMqBusFactory.cs:line 41
+   at SampleCourier.ProcessingService.Config.MassTransitExts.<>c__DisplayClass0_0.<AddMassTransitWithRabbitMq>b__0(IServiceProvider svcProv) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Config\MassTransitExts.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at SampleCourier.Common.MassTransit.AppBuilderExts.UseMassTransit(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.Common\MassTransit\AppBuilderExts.cs:line 23
+   at SampleCourier.ProcessingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Startup.cs:line 43
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISSetupFilter.<>c__DisplayClass4_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+11/26/19 18:03:21.392 [ERR] [Microsoft.AspNetCore.Server.Kestrel] [ThreadId: 7] Connection id ""0HLRIG73HS2I2"", Request id ""0HLRIG73HS2I2:00000001"": An unhandled exception was thrown by the application.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: values
+   at System.String.Join(String separator, IEnumerable`1 values)
+   at Microsoft.Extensions.RazorViews.BaseView.EndWriteAttribute()
+   at Microsoft.AspNetCore.Hosting.Views.ErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+11/26/19 18:04:11.694 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.808 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.823 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.824 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.826 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.827 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.833 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:04:11.834 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 12] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/26/19 18:06:01.262 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-26e3-08d772822492 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 18:06:03.215 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 7] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 18:06:04.224 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 12] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 18:06:04.726 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-baaf-08d772822883.png"
+11/26/19 18:06:04.738 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 15] Completed, length = 5056
+11/26/19 18:06:06.544 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/26/19 18:06:06.566 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 13] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/26/19 18:06:08.725 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 17] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-baaf-08d772822883.png"
+11/26/19 18:06:10.629 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 30] Hit here from fault in RetrieveActivity: "PreProcessParam"
+11/27/19 00:34:53.146 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.194 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.195 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.195 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.195 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.196 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.196 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:34:53.196 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 10] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.162 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.165 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.166 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.167 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.168 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.169 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.170 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:35:03.170 [ERR] [MassTransit.RabbitMqTransport.Transport.RabbitMqReceiveTransport] [ThreadId: 29] RabbitMQ Connect Failed: "Broker unreachable: guest@localhost:5672/"
+11/27/19 00:46:31.474 [INF] [SampleCourier.ProcessingService.Activities.Validate.ValidateActivity] [ThreadId: 7] Validated Request 98570000-7590-54ee-2302-08d772ba16a1 for address https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/27/19 00:46:33.260 [INF] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 16] PreProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/27/19 00:46:34.672 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 6] Retrieve Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/27/19 00:46:34.996 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Success, copying to local file: "bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-d423-08d772ba1bab.png"
+11/27/19 00:46:35.010 [INF] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 4] Completed, length = 5056
+11/27/19 00:46:39.561 [INF] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 16] PostProcess Content: https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG
+11/27/19 00:46:39.584 [ERR] [SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity] [ThreadId: 16] Exception: 
+System.Exception: There is a fault in PostProcess Activity!
+   at SampleCourier.ProcessingService.Activities.PostProcess.PostProcessActivity.Execute(ExecuteContext`1 context) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\Activities\PostProcess\PostProcessActivity.cs:line 24
+11/27/19 00:46:48.717 [ERR] [SampleCourier.ProcessingService.Activities.Retrieve.RetrieveActivity] [ThreadId: 13] Hit here from fault in PostProcessActivity: "E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.ProcessingService\bin\Debug\netcoreapp2.2\content\98570000-7590-54ee-d423-08d772ba1bab.png"
+11/27/19 00:46:50.641 [ERR] [SampleCourier.ProcessingService.Activities.PreProcess.PreProcessActivity] [ThreadId: 30] Hit here from fault in RetrieveActivity: "PreProcessParam"

@@ -6,13 +6,14 @@ using MassTransit;
 using MassTransit.Courier;
 using Microsoft.Extensions.Options;
 using SampleCourier.Contracts;
+using SampleCourier.Contracts.Events;
 using SampleCourier.WebApi.Config;
 
 namespace SampleCourier.WebApi.Controllers
 {
 	public class RoutingSlipPublisher
 	{
-		public RoutingSlipPublisher(IBusControl bus,IOptions<MqActivityOptions> actCfg)
+		public RoutingSlipPublisher(IBusControl bus, IOptions<MqActivityOptions> actCfg)
 		{
 			_bus = bus;
 			_activityConfig = actCfg.Value;

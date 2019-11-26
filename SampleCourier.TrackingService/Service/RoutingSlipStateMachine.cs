@@ -5,6 +5,7 @@ using Automatonymous;
 using MassTransit.Courier.Contracts;
 using Microsoft.Extensions.Logging;
 using SampleCourier.Contracts;
+using SampleCourier.Contracts.Events;
 using SampleCourier.Models;
 
 namespace SampleCourier.TrackingService.Service
@@ -91,7 +92,7 @@ namespace SampleCourier.TrackingService.Service
 			context.Instance.EndTime = context.Data.Timestamp;
 			context.Instance.Duration = context.Data.Duration;
 
-			string faultSummary = string.Join(", ",
+            string faultSummary = string.Join(", ",
 				context.Data.ActivityExceptions.Select(x => string.Format("{0}: {1}",x.Name,x.ExceptionInfo.Message)));
 
 			context.Instance.FaultSummary = faultSummary;

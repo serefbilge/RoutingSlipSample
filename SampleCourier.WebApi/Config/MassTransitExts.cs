@@ -15,21 +15,14 @@ namespace SampleCourier.WebApi.Config
 {
 	public static class MassTransitExts
 	{
-		public static void AddMassTransitWithRabbitMq(this IServiceCollection services,IConfiguration appConfig)
+		public static void AddMassTransitWithRabbitMq(this IServiceCollection services, IConfiguration appConfig)
 		{
 			if (services == null)
 				throw new ArgumentNullException("services");
 
 			if (appConfig == null)
 				throw new ArgumentNullException("appConfig");
-
-			var cfgSection = appConfig.GetSection("RabbitMqHost");
-
-			if (!cfgSection.Exists())
-				throw new InvalidOperationException("Appsettings: 'RabbitMqHost' section is not found");
-
-			services.Configure<RabbitMqHostOptions>(cfgSection);
-
+            			
 			var actSection = appConfig.GetSection("Activities");
 
 			if (!actSection.Exists())
@@ -50,11 +43,9 @@ namespace SampleCourier.WebApi.Config
 
 			services.AddSingleton(svcProv =>
 			{
-				var hostOpts = svcProv.GetService<IOptions<RabbitMqHostOptions>>().Value;
-
 				return Bus.Factory.CreateUsingRabbitMq(cfg =>
 				{
-					var host = cfg.CreateHost(hostOpts);
+					var host = cfg.CreateHost(appConfig);
 
 					cfg.UseSerilog();
 				});

@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace SampleCourier.Contracts
+namespace SampleCourier.Contracts.Events
 {
 	/// <summary>
 	/// Published when a request is rejected
 	/// </summary>
-	public interface RequestRejected
-	{
+	public interface RequestRejected : IEvent
+    {
 		/// <summary>
 		/// The requestId
 		/// </summary>

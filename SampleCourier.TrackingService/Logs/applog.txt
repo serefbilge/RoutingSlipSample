@@ -40,3 +40,41 @@
 11/22/19 15:48:00.436 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Completed: 98570000-7590-54ee-c28b-08d76f4a16fa, CurrentState = Executing
 11/22/19 17:18:54.873 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Initial
 11/22/19 17:19:15.412 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Executing
+11/25/19 15:28:20.406 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-013b-08d771a2f45e, CurrentState = Initial
+11/25/19 15:28:29.229 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Completed: 98570000-7590-54ee-013b-08d771a2f45e, CurrentState = Executing
+11/25/19 15:28:53.693 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-600b-08d771a308c2, CurrentState = Initial
+11/25/19 15:28:59.615 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Completed: 98570000-7590-54ee-600b-08d771a308c2, CurrentState = Executing
+11/25/19 15:30:30.635 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-6161-08d771a34205, CurrentState = Initial
+11/25/19 15:30:55.480 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Faulted: 98570000-7590-54ee-6161-08d771a34205, CurrentState = Executing
+11/25/19 17:16:52.000 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Created: 98570000-7590-54ee-f0bd-08d771b1aa9c, CurrentState = Initial
+11/25/19 17:38:44.985 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 59] Slip Faulted: 98570000-7590-54ee-f0bd-08d771b1aa9c, CurrentState = Executing
+11/25/19 17:38:45.022 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 54] Slip Faulted: 98570000-7590-54ee-f0bd-08d771b1aa9c, CurrentState = Faulted
+11/26/19 14:18:48.428 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-a611-08d7726266a7, CurrentState = Initial
+11/26/19 14:39:21.998 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 22] Slip Created: 98570000-7590-54ee-4768-08d7726544c0, CurrentState = Initial
+11/26/19 14:39:22.390 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 21] Slip Faulted: 98570000-7590-54ee-4768-08d7726544c0, CurrentState = Executing
+11/26/19 14:54:47.621 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 22] Slip Created: 98570000-7590-54ee-b383-08d77266e8a3, CurrentState = Initial
+11/26/19 14:54:47.801 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Created: 98570000-7590-54ee-b383-08d77266e8a3, CurrentState = Executing
+11/26/19 14:54:47.845 [ERR] [MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer] [ThreadId: 27] An error occurred trying to NACK a message with delivery tag 1: "RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text=\"End of stream\", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı. ---> System.Net.Sockets.SocketException: Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.Write(Byte[] buffer)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer.RabbitMQ.Client.IBasicConsumer.HandleBasicDeliver(String consumerTag, UInt64 deliveryTag, Boolean redelivered, String exchange, String routingKey, IBasicProperties properties, Byte[] body) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\Pipeline\RabbitMqBasicConsumer.cs:line 170"
+11/26/19 14:54:47.861 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Faulted: 98570000-7590-54ee-b383-08d77266e8a3, CurrentState = Executing
+11/26/19 15:09:52.998 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Created: 98570000-7590-54ee-576c-08d772697c1b, CurrentState = Initial
+11/26/19 15:09:53.254 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Faulted: 98570000-7590-54ee-576c-08d772697c1b, CurrentState = Executing
+11/26/19 16:09:54.576 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 36] Slip Created: 98570000-7590-54ee-0eca-08d772715351, CurrentState = Initial
+11/26/19 16:09:54.858 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Faulted: 98570000-7590-54ee-0eca-08d772715351, CurrentState = Executing
+11/26/19 16:21:59.013 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-4702-08d772739c0e, CurrentState = Initial
+11/26/19 16:22:12.927 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 6] Slip Faulted: 98570000-7590-54ee-4702-08d772739c0e, CurrentState = Executing
+11/26/19 17:00:31.635 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-9dae-08d77278fdc7, CurrentState = Initial
+11/26/19 17:04:29.021 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 24] Slip Created: 98570000-7590-54ee-2133-08d772798659, CurrentState = Initial
+11/26/19 17:11:14.540 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-a5c0-08d7727a7a7b, CurrentState = Initial
+11/26/19 17:18:38.545 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Created: 98570000-7590-54ee-87ef-08d7727b85cf, CurrentState = Initial
+11/26/19 17:19:09.169 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 8] Slip Faulted: 98570000-7590-54ee-87ef-08d7727b85cf, CurrentState = Executing
+11/26/19 18:06:01.332 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Created: 98570000-7590-54ee-f34e-08d772822491, CurrentState = Initial
+11/26/19 18:06:10.690 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Faulted: 98570000-7590-54ee-f34e-08d772822491, CurrentState = Executing
+11/27/19 00:46:31.492 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Created: 98570000-7590-54ee-f334-08d772ba16a0, CurrentState = Initial
+11/27/19 00:46:50.705 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Faulted: 98570000-7590-54ee-f334-08d772ba16a0, CurrentState = Executing

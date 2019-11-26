@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCourier.Contracts", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCourier.Models", "SampleCourier.Models\SampleCourier.Models.csproj", "{3AAEF059-9504-4C8C-957B-3E3972B3BFE1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{180ACEE3-28DA-42C2-B992-19C0045C7AF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProcessServices", "ProcessServices", "{B62B254D-CA90-4FA3-AF01-044E8E68D262}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C072D25-5019-46B0-A44F-5DDAFA1B9C06} = {B62B254D-CA90-4FA3-AF01-044E8E68D262}
+		{BF78A4D4-D2BC-4D06-B2EE-6ED07A41517C} = {180ACEE3-28DA-42C2-B992-19C0045C7AF5}
+		{54E2D792-CB47-4310-B5F9-2BE7D0F57776} = {180ACEE3-28DA-42C2-B992-19C0045C7AF5}
+		{3AAEF059-9504-4C8C-957B-3E3972B3BFE1} = {180ACEE3-28DA-42C2-B992-19C0045C7AF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {649D99CB-EE8B-410D-B114-728A07D2E29A}

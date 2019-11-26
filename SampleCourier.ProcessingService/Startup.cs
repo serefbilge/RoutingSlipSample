@@ -16,17 +16,19 @@ namespace SampleCourier.ProcessingService
 {
 	public class Startup
 	{
-		public Startup(IConfiguration configuration)
+		public Startup(IServiceProvider serviceProvider, IConfiguration configuration)
 		{
-			Configuration = configuration;
+            ServiceProvider = serviceProvider;
+            Configuration = configuration;
 		}
 
-		public IConfiguration Configuration { get; }
+        public IServiceProvider ServiceProvider { get; set; }
+        public IConfiguration Configuration { get; }
 
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-			services.AddMassTransitWithRabbitMq(Configuration);
+			services.AddMassTransitWithRabbitMq(ServiceProvider, Configuration);
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);			
 		}
 

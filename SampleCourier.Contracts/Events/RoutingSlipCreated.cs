@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace SampleCourier.Contracts
+namespace SampleCourier.Contracts.Events
 {
-	public interface RoutingSlipCreated
-	{
+	public interface RoutingSlipCreated : IEvent
+    {
 		/// <summary>
 		/// The tracking number of the routing slip
 		/// </summary>

@@ -11,14 +11,15 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SampleCourier.WebApi.Config;
+using RabbitMQ.Client;
 
 namespace SampleCourier.WebApi
 {
 	public class Startup
-	{
+	{       
 		public Startup(IConfiguration configuration)
 		{
-			Configuration = configuration;
+            Configuration = configuration;
 		}
 
 		public IConfiguration Configuration { get; }
