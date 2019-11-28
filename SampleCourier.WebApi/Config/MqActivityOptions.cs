@@ -10,6 +10,7 @@ namespace SampleCourier.WebApi.Config
 		public string ValidateAddress { get; set; }
         public string PreProcessAddress { get; set; }        
         public string RetrieveAddress { get; set; }
-        public string PostProcessAddress { get; set; }        
+        public string PostProcessAddress { get; set; }
+        public string ConsentAddress { get; set; }
     }
 }

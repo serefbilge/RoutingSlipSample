@@ -21,7 +21,7 @@ namespace SampleCourier.ProcessingService.Activities.PostProcess
 
             try
             {
-                throw new Exception("There is a fault in PostProcess Activity!");
+                //throw new Exception("There is a fault in PostProcess Activity!");
 
                 return context.Completed<PostProcessLog>(new Log("PostProcessParam"));
             }            

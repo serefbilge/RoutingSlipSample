@@ -1,80 +1,39 @@
-10/14/19 17:13:06.783 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-f125-08d750b0a209, CurrentState = Initial
-10/14/19 17:13:14.628 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Completed: 98570000-7590-54ee-f125-08d750b0a209, CurrentState = Executing
-10/14/19 17:30:08.928 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 15] Slip Created: 98570000-7590-54ee-7325-08d750b303c5, CurrentState = Initial
-10/14/19 17:31:29.334 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Created: 98570000-7590-54ee-7d31-08d750b333b6, CurrentState = Initial
-10/14/19 17:33:54.299 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Created: 98570000-7590-54ee-0659-08d750b38a1d, CurrentState = Initial
-10/14/19 17:33:56.872 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 33] Slip Created: 98570000-7590-54ee-757f-08d750b38ba8, CurrentState = Initial
-10/14/19 17:33:57.596 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 34] Slip Created: 98570000-7590-54ee-07e1-08d750b38c17, CurrentState = Initial
-10/14/19 17:54:54.412 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Completed: 98570000-7590-54ee-7d31-08d750b333b6, CurrentState = Executing
-10/14/19 17:54:54.571 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Completed: 98570000-7590-54ee-07e1-08d750b38c17, CurrentState = Executing
-10/14/19 17:54:54.578 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Completed: 98570000-7590-54ee-7325-08d750b303c5, CurrentState = Executing
-10/14/19 17:54:54.584 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 22] Slip Completed: 98570000-7590-54ee-0659-08d750b38a1d, CurrentState = Executing
-10/14/19 17:54:54.590 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 28] Slip Completed: 98570000-7590-54ee-757f-08d750b38ba8, CurrentState = Executing
-10/14/19 18:52:23.529 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Created: 98570000-7590-54ee-b2fc-08d750be80d7, CurrentState = Initial
-10/14/19 18:52:31.353 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 29] Slip Completed: 98570000-7590-54ee-b2fc-08d750be80d7, CurrentState = Executing
-10/18/19 23:38:41.167 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 26] Slip Created: 98570000-7590-54ee-2d20-08d7540b27d5, CurrentState = Initial
-10/18/19 23:39:00.130 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Faulted: 98570000-7590-54ee-2d20-08d7540b27d5, CurrentState = Executing
-10/18/19 23:56:27.640 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Created: 98570000-7590-54ee-c51d-08d7540da128, CurrentState = Initial
-10/18/19 23:56:28.920 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Faulted: 98570000-7590-54ee-c51d-08d7540da128, CurrentState = Executing
-11/22/19 10:54:52.112 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Created: 98570000-7590-54ee-8548-08d76f213704, CurrentState = Initial
-11/22/19 10:55:16.145 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Faulted: 98570000-7590-54ee-8548-08d76f213704, CurrentState = Executing
-11/22/19 10:56:12.978 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 5] Slip Created: 98570000-7590-54ee-5323-08d76f2171c5, CurrentState = Initial
-11/22/19 11:25:25.251 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Faulted: 98570000-7590-54ee-5323-08d76f2171c5, CurrentState = Executing
-11/22/19 11:26:04.822 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-2da4-08d76f259d9f, CurrentState = Initial
-11/22/19 11:29:57.548 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Faulted: 98570000-7590-54ee-2da4-08d76f259d9f, CurrentState = Executing
-11/22/19 11:30:26.237 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Created: 98570000-7590-54ee-91c7-08d76f26396d, CurrentState = Initial
-11/22/19 11:31:44.272 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Faulted: 98570000-7590-54ee-91c7-08d76f26396d, CurrentState = Executing
-11/22/19 11:36:17.766 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Created: 98570000-7590-54ee-058b-08d76f270a2c, CurrentState = Initial
-11/22/19 11:36:40.270 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Completed: 98570000-7590-54ee-058b-08d76f270a2c, CurrentState = Executing
-11/22/19 14:11:17.569 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-67ca-08d76f3cb1bc, CurrentState = Initial
-11/22/19 14:11:18.446 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-e759-08d76f3cb2c5, CurrentState = Initial
-11/22/19 14:11:18.578 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-67ca-08d76f3cb1bc, CurrentState = Executing
-11/22/19 14:11:18.717 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 8] Slip Completed: 98570000-7590-54ee-e759-08d76f3cb2c5, CurrentState = Executing
-11/22/19 14:12:40.200 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 9] Slip Created: 98570000-7590-54ee-283a-08d76f3ce382, CurrentState = Initial
-11/22/19 14:12:40.590 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Completed: 98570000-7590-54ee-283a-08d76f3ce382, CurrentState = Executing
-11/22/19 14:14:59.253 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-dbba-08d76f3d35d7, CurrentState = Initial
-11/22/19 14:15:08.922 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Faulted: 98570000-7590-54ee-dbba-08d76f3d35d7, CurrentState = Executing
-11/22/19 15:40:42.748 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Created: 98570000-7590-54ee-a85f-08d76f492f9f, CurrentState = Initial
-11/22/19 15:41:05.417 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Faulted: 98570000-7590-54ee-a85f-08d76f492f9f, CurrentState = Executing
-11/22/19 15:47:10.905 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-c28b-08d76f4a16fa, CurrentState = Initial
-11/22/19 15:48:00.436 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Completed: 98570000-7590-54ee-c28b-08d76f4a16fa, CurrentState = Executing
-11/22/19 17:18:54.873 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Initial
-11/22/19 17:19:15.412 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 10] Slip Completed: 98570000-7590-54ee-f92a-08d76f56e79e, CurrentState = Executing
-11/25/19 15:28:20.406 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-013b-08d771a2f45e, CurrentState = Initial
-11/25/19 15:28:29.229 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Completed: 98570000-7590-54ee-013b-08d771a2f45e, CurrentState = Executing
-11/25/19 15:28:53.693 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-600b-08d771a308c2, CurrentState = Initial
-11/25/19 15:28:59.615 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Completed: 98570000-7590-54ee-600b-08d771a308c2, CurrentState = Executing
-11/25/19 15:30:30.635 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-6161-08d771a34205, CurrentState = Initial
-11/25/19 15:30:55.480 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Faulted: 98570000-7590-54ee-6161-08d771a34205, CurrentState = Executing
-11/25/19 17:16:52.000 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Created: 98570000-7590-54ee-f0bd-08d771b1aa9c, CurrentState = Initial
-11/25/19 17:38:44.985 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 59] Slip Faulted: 98570000-7590-54ee-f0bd-08d771b1aa9c, CurrentState = Executing
-11/25/19 17:38:45.022 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 54] Slip Faulted: 98570000-7590-54ee-f0bd-08d771b1aa9c, CurrentState = Faulted
-11/26/19 14:18:48.428 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-a611-08d7726266a7, CurrentState = Initial
-11/26/19 14:39:21.998 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 22] Slip Created: 98570000-7590-54ee-4768-08d7726544c0, CurrentState = Initial
-11/26/19 14:39:22.390 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 21] Slip Faulted: 98570000-7590-54ee-4768-08d7726544c0, CurrentState = Executing
-11/26/19 14:54:47.621 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 22] Slip Created: 98570000-7590-54ee-b383-08d77266e8a3, CurrentState = Initial
-11/26/19 14:54:47.801 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Created: 98570000-7590-54ee-b383-08d77266e8a3, CurrentState = Executing
-11/26/19 14:54:47.845 [ERR] [MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer] [ThreadId: 27] An error occurred trying to NACK a message with delivery tag 1: "RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text=\"End of stream\", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı. ---> System.Net.Sockets.SocketException: Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   --- End of inner exception stack trace ---
-   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
-   at RabbitMQ.Client.Impl.SocketFrameHandler.Write(Byte[] buffer)
-   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
-   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer.RabbitMQ.Client.IBasicConsumer.HandleBasicDeliver(String consumerTag, UInt64 deliveryTag, Boolean redelivered, String exchange, String routingKey, IBasicProperties properties, Byte[] body) in C:\projects\masstransit\src\MassTransit.RabbitMqTransport\Pipeline\RabbitMqBasicConsumer.cs:line 170"
-11/26/19 14:54:47.861 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Faulted: 98570000-7590-54ee-b383-08d77266e8a3, CurrentState = Executing
-11/26/19 15:09:52.998 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Created: 98570000-7590-54ee-576c-08d772697c1b, CurrentState = Initial
-11/26/19 15:09:53.254 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 27] Slip Faulted: 98570000-7590-54ee-576c-08d772697c1b, CurrentState = Executing
-11/26/19 16:09:54.576 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 36] Slip Created: 98570000-7590-54ee-0eca-08d772715351, CurrentState = Initial
-11/26/19 16:09:54.858 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 25] Slip Faulted: 98570000-7590-54ee-0eca-08d772715351, CurrentState = Executing
-11/26/19 16:21:59.013 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-4702-08d772739c0e, CurrentState = Initial
-11/26/19 16:22:12.927 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 6] Slip Faulted: 98570000-7590-54ee-4702-08d772739c0e, CurrentState = Executing
-11/26/19 17:00:31.635 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-9dae-08d77278fdc7, CurrentState = Initial
-11/26/19 17:04:29.021 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 24] Slip Created: 98570000-7590-54ee-2133-08d772798659, CurrentState = Initial
-11/26/19 17:11:14.540 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 11] Slip Created: 98570000-7590-54ee-a5c0-08d7727a7a7b, CurrentState = Initial
-11/26/19 17:18:38.545 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Created: 98570000-7590-54ee-87ef-08d7727b85cf, CurrentState = Initial
-11/26/19 17:19:09.169 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 8] Slip Faulted: 98570000-7590-54ee-87ef-08d7727b85cf, CurrentState = Executing
-11/26/19 18:06:01.332 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Created: 98570000-7590-54ee-f34e-08d772822491, CurrentState = Initial
-11/26/19 18:06:10.690 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 7] Slip Faulted: 98570000-7590-54ee-f34e-08d772822491, CurrentState = Executing
-11/27/19 00:46:31.492 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Created: 98570000-7590-54ee-f334-08d772ba16a0, CurrentState = Initial
-11/27/19 00:46:50.705 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 13] Slip Faulted: 98570000-7590-54ee-f334-08d772ba16a0, CurrentState = Executing
+11/28/19 13:38:11.209 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 12] Slip Created: 98570000-7590-54ee-eb95-08d773ef07f3, CurrentState = Initial
+11/28/19 13:38:39.148 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 8] Slip Faulted: 98570000-7590-54ee-eb95-08d773ef07f3, CurrentState = Executing
+11/28/19 15:20:37.101 [FTL] [Microsoft.AspNetCore.Hosting.Internal.WebHost] [ThreadId: 1] Application startup exception
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - Bekleme işlem zamanı aşıldı.) ---> System.ComponentModel.Win32Exception (258): Bekleme işlem zamanı aşıldı
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext c, TState s)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, Func`2 operation, Func`2 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreated()
+   at Microsoft.EntityFrameworkCore.Infrastructure.DatabaseFacade.EnsureCreated()
+   at SampleCourier.TrackingService.Config.AppBuilderExts.UseEntityFrameworkCore(IApplicationBuilder app) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.TrackingService\Config\AppBuilderExts.cs:line 21
+   at SampleCourier.TrackingService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env) in E:\IBM-Halkbank-Works\Framework\MassTransit-Samples\_RoutingSlip Samples\RoutingslipSample\SampleCourier.TrackingService\Startup.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Internal.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+ClientConnectionId:570eb5df-1d48-416d-a92a-145d586149e1
+Error Number:258,State:0,Class:20
+11/28/19 15:21:39.585 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 16] Slip Faulted: 98570000-7590-54ee-23d5-08d773fc2eb7, CurrentState = Initial
+11/28/19 15:21:40.556 [INF] [SampleCourier.TrackingService.Service.RoutingSlipStateMachine] [ThreadId: 15] Slip Faulted: 98570000-7590-54ee-23d5-08d773fc2eb7, CurrentState = Faulted

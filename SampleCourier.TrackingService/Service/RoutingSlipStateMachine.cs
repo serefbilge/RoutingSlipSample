@@ -48,25 +48,25 @@ namespace SampleCourier.TrackingService.Service
 					.ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber,"Slip Compensation Faulted",ctx.Instance.State))
 					.TransitionTo(CompensationFailed));
 
-			// during any state, we can handle any of the events, to transition or capture previously
-			// missed data.
-			DuringAny(
-				When(SlipCreated)
-					.Then(HandleRoutingSlipCreated)
-					.ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber,"Slip Created",ctx.Instance.State))
-					.TransitionTo(Executing),
-				When(SlipCompleted)
-					.Then(HandleRoutingSlipCompleted)
-					.ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber,"Slip Completed",ctx.Instance.State))
-					.TransitionTo(Completed),
-				When(SlipFaulted)
-					.Then(HandleRoutingSlipFaulted)
-					.ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber,"Slip Faulted",ctx.Instance.State))
-					.TransitionTo(Faulted),
-				When(SlipCompensationFailed)
-					.ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber,"Slip Compensation Faulted",ctx.Instance.State))
-					.TransitionTo(CompensationFailed));
-		}
+            // during any state, we can handle any of the events, to transition or capture previously
+            // missed data.
+            DuringAny(
+                When(SlipCreated)
+                    .Then(HandleRoutingSlipCreated)
+                    .ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber, "Slip Created", ctx.Instance.State))
+                    .TransitionTo(Executing),
+                When(SlipCompleted)
+                    .Then(HandleRoutingSlipCompleted)
+                    .ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber, "Slip Completed", ctx.Instance.State))
+                    .TransitionTo(Completed),
+                When(SlipFaulted)
+                    .Then(HandleRoutingSlipFaulted)
+                    .ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber, "Slip Faulted", ctx.Instance.State))
+                    .TransitionTo(Faulted),
+                When(SlipCompensationFailed)
+                    .ThenAsync(ctx => LogAsync(ctx.Data.TrackingNumber, "Slip Compensation Faulted", ctx.Instance.State))
+                    .TransitionTo(CompensationFailed));
+        }
 
 		public State Executing { get; private set; }
 		public State Completed { get; private set; }

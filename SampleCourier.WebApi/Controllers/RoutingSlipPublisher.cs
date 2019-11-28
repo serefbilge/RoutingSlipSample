@@ -30,6 +30,7 @@ namespace SampleCourier.WebApi.Controllers
             builder.AddActivity("PreProcess", new Uri(_activityConfig.PreProcessAddress));
             builder.AddActivity("Retrieve",new Uri(_activityConfig.RetrieveAddress));
             builder.AddActivity("PostProcess", new Uri(_activityConfig.PostProcessAddress));
+            builder.AddActivity("Consent", new Uri(_activityConfig.ConsentAddress));
 
             builder.SetVariables(new
 			{

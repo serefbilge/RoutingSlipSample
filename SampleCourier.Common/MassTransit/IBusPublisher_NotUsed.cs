@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SampleCourier.Common.MassTransit
 {
-    public interface IBusPublisher
+    public interface IBusPublisher_NotUsed
     {
         Task<Guid> Send<TCommand>(TCommand command) where TCommand : class, ICommand;
         Task<IOperationResult> SendRequest<TCommand>(TCommand command) where TCommand : class, ICommand;

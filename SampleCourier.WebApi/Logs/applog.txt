@@ -20,3 +20,27 @@
 11/26/19 18:05:59.682 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 8] Sent successfully (98570000-7590-54ee-f10c-08d772822357), duration = 1586ms
 11/27/19 00:46:23.699 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 8] Request (98570000-7590-54ee-465f-08d772ba14f0): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
 11/27/19 00:46:28.456 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Sent successfully (98570000-7590-54ee-465f-08d772ba14f0), duration = 1933ms
+11/27/19 10:05:23.402 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 7] Request (98570000-7590-54ee-a884-08d773082c28): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/27/19 10:05:28.313 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Sent successfully (98570000-7590-54ee-a884-08d773082c28), duration = 2131ms
+11/27/19 10:06:52.271 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 9] Request (98570000-7590-54ee-2f69-08d773086121): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/27/19 10:06:56.712 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Sent successfully (98570000-7590-54ee-2f69-08d773086121), duration = 1506ms
+11/27/19 10:27:56.360 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Request (98570000-7590-54ee-9b53-08d7730b5295): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/27/19 10:28:00.937 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Sent successfully (98570000-7590-54ee-9b53-08d7730b5295), duration = 1342ms
+11/27/19 10:28:58.815 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 20] Request (98570000-7590-54ee-b125-08d7730b77cf): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/27/19 10:29:11.728 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 26] Sent successfully (98570000-7590-54ee-b125-08d7730b77cf), duration = 1300ms
+11/27/19 10:32:19.080 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Request (98570000-7590-54ee-8697-08d7730bef2d): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/27/19 10:32:22.533 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 10] Sent successfully (98570000-7590-54ee-8697-08d7730bef2d), duration = 1275ms
+11/28/19 06:49:53.916 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 11] Request (98570000-7590-54ee-d7d4-08d773b60740): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 06:49:59.759 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 7] Sent successfully (98570000-7590-54ee-d7d4-08d773b60740), duration = 3931ms
+11/28/19 06:54:58.692 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 15] Request (98570000-7590-54ee-0fe7-08d773b6bcea): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 06:55:05.912 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 8] Sent successfully (98570000-7590-54ee-0fe7-08d773b6bcea), duration = 5514ms
+11/28/19 13:31:31.092 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 15] Request (98570000-7590-54ee-3d4c-08d773ee224a): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 13:31:36.839 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Sent successfully (98570000-7590-54ee-3d4c-08d773ee224a), duration = 4292ms
+11/28/19 13:33:16.187 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 12] Request (98570000-7590-54ee-6178-08d773ee60ee): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 13:33:19.093 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 7] Sent successfully (98570000-7590-54ee-6178-08d773ee60ee), duration = 1858ms
+11/28/19 13:37:54.951 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Request (98570000-7590-54ee-63e9-08d773ef0716): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 13:37:59.155 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 6] Sent successfully (98570000-7590-54ee-63e9-08d773ef0716), duration = 2767ms
+11/28/19 13:44:27.938 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 8] Request (98570000-7590-54ee-65e0-08d773eff14f): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 13:44:30.242 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 26] Sent successfully (98570000-7590-54ee-65e0-08d773eff14f), duration = 1385ms
+11/28/19 15:11:37.984 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 7] Request (98570000-7590-54ee-f87b-08d773fc1eac): url = https://www.gravatar.com/avatar/91083ea25788668bc57a042f91732d75?s=48&d=identicon&r=PG, count = 0
+11/28/19 15:13:45.482 [INF] [SampleCourier.WebApi.Controllers.ExecController] [ThreadId: 19] Sent successfully (98570000-7590-54ee-f87b-08d773fc1eac), duration = 119627ms

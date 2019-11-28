@@ -9,11 +9,11 @@ using SampleCourier.Contracts;
 
 namespace SampleCourier.Common.MassTransit
 {
-    public class BusPublisher : IBusPublisher
+    public class BusPublisher_NotUsed : IBusPublisher_NotUsed
     {
         private readonly IBus _bus;
 
-        public BusPublisher(IBus bus)
+        public BusPublisher_NotUsed(IBus bus)
         {
             _bus = bus ?? throw new ArgumentNullException(nameof(bus));
         }
